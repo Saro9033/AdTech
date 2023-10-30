@@ -1,0 +1,251 @@
+
+body, .nav-link, .dropdown{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.mbody .row p,h2{
+  font-family: 'Open Sans', sans-serif;
+
+}
+.pc{
+  font-size: 11.3778px;
+  color:#3C4858
+}
+.dropdown li{
+  font-size: 10.3778px;
+  color:#3C4858;
+  margin: 10px 0;
+}
+
+.rightNav a{
+  font-size: 11.3778px;
+  color:#3C4858;
+  text-decoration: none;
+}
+
+.rightNav a:hover{
+  color:#52C0F5;
+  text-decoration: underline;
+}
+
+.dropdown-menu{
+  border: none;
+}
+
+.pc:hover{
+  color:#52C0F5;
+}
+
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+
+strong{
+  font-size: 13px;
+  color: #3C4858;
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  cursor: pointer;
+}
+strong:hover{
+  text-decoration: underline;
+}
+.dropdown-menu .row a{
+  font-size: 10.3778px;
+  display: block;
+text-decoration: none;
+color: #8E44AD;
+ margin: 10px 0;
+}
+.dropdown-menu .row a:hover{
+  text-decoration: underline;
+color: #52C0F5;
+}
+
+.rbg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.adroll.com/assets/img/globals/bg-nav-platform.png");
+  background-repeat: repeat-x;
+  background-size: 100px auto;
+
+}
+
+.rbg {
+  position: relative;
+  height: 60px;
+  width: 100%;
+}
+
+.dropdown-menu a:hover{
+  text-decoration: underline;
+color: #52C0F5;
+}
+
+.box h6{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.box p{
+  font-size: 10px;
+}
+
+.btn-purp{
+  background-color: #8E44AD;
+  color: white;
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.2cap;
+  transition: 0.5s ease-in;
+}
+.btn-purp:hover{
+  background-color: #BF4088;
+  color: white;
+}
+
+.shead{
+  color: white;
+  font-size: 15px;
+  margin: 15px 0px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sbody{
+  list-style: none;
+}
+
+.sbody li a{
+  text-decoration: none;
+  color: #D6D6D6;
+}
+.sbody li a:hover{
+  text-decoration: none;
+  color: #D6D6D6;
+}
+
+
+.btn-blue{
+  background-color: #00AEEF;
+  color: white;
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.2cap;
+  transition: 0.5s ease-in;
+}
+.btn-blue:hover{
+  background-color: #79bfd8;
+  color: white;
+}
+
+.bgimg{
+  background-image: url('https://www.adroll.com/assets/svg/bkgd/blob-blue.svg');
+  background-position: left -65px bottom -150px;
+  background-repeat: no-repeat;
+  flex: 1;
+  flex-basis: 50%;
+  position:relative;
+  margin-bottom: -70px;
+padding-bottom: 70px;
+margin-top: -100px;
+}
+
+.c2{
+  font-family: 'Work Sans', sans-serif;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.imge{
+  width: 130px;
+  padding: 10px;
+}
+
+.plink{
+  color: #CC66A0;
+  cursor: pointer;
+  transition:  0.5s ease-in-out;
+
+}
+
+.plink:hover{
+  color:rgb(24, 16, 99)
+}
+
+.pimg{
+  background:url('https://www.adroll.com/assets/svg/bkgd/blob-pink.svg') ;
+  background-position: left -60px top -100px;
+}
+
+.pimg p {
+  align-self: flex-end;
+    font-family: Work Sans,sans-serif;
+    font-size: 38px;
+    margin-bottom: 12%;
+    margin-top: 30%;
+    position: relative;
+    text-align: center;
+    color: #3C4858;
+}
+
+.badges{
+  width: 150px;
+}
+
+.fanchor{
+  color:black;
+  text-decoration: none;
+  font-weight: 600;
+  padding:5px 35px ;
+}
+
+.fanchor:hover{
+  text-decoration: underline;
+}
+
+.blueA{
+  color: #0DBDFF;
+  text-decoration: none;
+}
+.blueA:hover{
+  text-decoration: underline;
+  color: #fdcd0a;
+}
+
+.change-icon{
+  transition: transform 1s ease-in;
+}
+
+
+
+.rbgNew{
+  position: relative;
+  height: 40px;
+  width: 100%;
+}
+
+.rbgNew::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.adroll.com/assets/img/globals/bg-nav-platform.png");
+  background-repeat: repeat-x;
+  background-size: 100px auto;
+
+}
