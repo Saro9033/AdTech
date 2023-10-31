@@ -22,6 +22,7 @@ const Footer = () => {
             <a href="" className='fanchor' style={{fontSize:'10px'}}>Your Privacy Choices</a>
 
         </div>
+        <p className='text-center mt-2' style={{fontSize:'10.4px', color:'black'}}>© 2006-2023, NextRoll, Inc. All rights reserved. AdRoll is a division of NextRoll. To learn more please visit nextroll.com.</p>
         <button className='my-3 p-2 rounded-2 btn-blue' style={{border:'none'}}>Do Not Sell or Share My Personal Information</button>
     </div>
   )

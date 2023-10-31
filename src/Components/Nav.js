@@ -8,7 +8,7 @@ const Nav = () => {
 
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light" style={{ background: 'rgb(255,255,255)', zIndex:'2', padding: window.innerWidth <990 ? null : '5px 12px' }} >
+        <nav className="navbar navbar-expand-lg navbar-light" style={{ background: 'rgb(255,255,255)', zIndex: '2', padding: window.innerWidth < 990 ? '0 0' : '5px 12px', position:'sticky', top:'0' }} >
             <div className="container-fluid p-1"  >
                 <a className="navbar-brand" href="#">
                     <img src="https://www.adroll.com/assets/svg/logo-adroll.svg" width='80' alt="" />
@@ -27,32 +27,38 @@ const Nav = () => {
                     </div>
                     <div className="offcanvas-body"  >
                         <ul className="navbar-nav"  >
+
+
+                            {/* dropdown 1 */}
+
+
                             <li className="nav-item dropdown" onMouseEnter={() => setActiveDrop(true)} onMouseLeave={() => setActiveDrop(false)}>
-                            {window.innerWidth > 990 ? <>   <a
+
+                                {window.innerWidth > 990 ? <>   <a
                                     type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false" className='nav-link pc' href="#">
                                     Why AddRoll?&nbsp;
                                     {window.innerWidth > 990 && (
                                         activeDrop ? (
-                                            <i style={{ fontSize: 'small', transition: 'transform 5s ease' }} className="fa-solid fa-angle-up"></i>
+                                            <i style={{ fontSize: 'small' }} className="change-icon fa-solid fa-angle-up"></i>
                                         ) : (
-                                            <i style={{ fontSize: 'small', transition: 'transform 5s ease' }} className="fa-solid fa-angle-down"></i>
+                                            <i style={{ fontSize: 'small' }} className="change-icon fa-solid fa-angle-down"></i>
                                         )
                                     )}</a>
 
-                                
+
                                     <ul style={{ minWidth: '0px', width: '115px', display: activeDrop ? 'block' : 'none' }} className="m-0 py-2 p-0 dropdown-menu shadow"
                                         aria-labelledby="dropdownMenuButton">
                                         <li ><span className="dropdown-item text-center" href="#"><strong>Why Addroll</strong></span></li>
                                         <li ><a className=" dropdown-item" href="#">Managed Services</a></li>
                                         <li ><a className=" dropdown-item" href="#">Case Studies</a></li>
                                     </ul>  </> :
-                                    <> 
-                                    <h6 className='shead'>Why AdRoll?</h6>
-                                    <ul className='sbody'>
-                                        <li ><a href="#">Managed Services</a></li>
-                                        <li ><a href="#">Case Studies</a></li>
-                                    </ul> </>
-                                    }
+                                    <>
+                                        <h6 className='shead'>Why AdRoll?</h6>
+                                        <ul className='sbody'>
+                                            <li ><a href="#">Managed Services</a></li>
+                                            <li ><a href="#">Case Studies</a></li>
+                                        </ul> </>
+                                }
 
                             </li>
 
@@ -75,7 +81,7 @@ const Nav = () => {
                                         minWidth: '0px', width: '100%', position: 'fixed', left: '0',
                                         transformOrigin: 'top center', transform: activeDrop2 ? 'scaleY(1)' : 'scaleY(0)',
                                         transition: 'transform 0.3s ease-in', display: activeDrop2 ? 'block' : 'none'
-                                    }} className="m-0 my-2 p-0 dropdown-menu shadow " aria-labelledby="dropdownMenuButton2">
+                                    }} className="m-0  p-0 dropdown-menu shadow " aria-labelledby="dropdownMenuButton2">
 
                                         <div className='row justify-content-center mx-3 my-5'>
 
@@ -116,17 +122,17 @@ const Nav = () => {
                                         </div>
 
                                     </ul>  </> :
-                                    <>                                    
-                                         <h6 className='shead'>Marketing Platform</h6>                                 
-                                    <ul className='sbody'>
-                                        <li ><a href="#">Platform Overview</a></li>
-                                        <li ><a href="#">Retargeting Ads</a></li>
-                                        <li ><a href="#">Brand Awareness</a></li>
-                                        <li ><a href="#">Connected Channels</a></li>
-                                        <li ><a href="#">Email Marketing</a></li>
-                                        <li ><a href="#">Reporting & Insights</a></li>
+                                    <>
+                                        <h6 className='shead'>Marketing Platform</h6>
+                                        <ul className='sbody'>
+                                            <li ><a href="#">Platform Overview</a></li>
+                                            <li ><a href="#">Retargeting Ads</a></li>
+                                            <li ><a href="#">Brand Awareness</a></li>
+                                            <li ><a href="#">Connected Channels</a></li>
+                                            <li ><a href="#">Email Marketing</a></li>
+                                            <li ><a href="#">Reporting & Insights</a></li>
 
-                                    </ul>  </>}
+                                        </ul>  </>}
                             </li>
 
 
@@ -170,11 +176,11 @@ const Nav = () => {
                             </li>
 
                             <li className="nav-item">
-                                <a className= {window.innerWidth > 990 ? 'nav-link pc' : 'shead'} href="#">Pricing</a>
+                                <a className={window.innerWidth > 990 ? 'nav-link pc' : 'shead'} href="#">Pricing</a>
                             </li>
 
                             <li className="nav-item dropdown" onMouseEnter={() => setActiveDrop4(true)} onMouseLeave={() => setActiveDrop4(false)}>
-                                {window.innerWidth > 990 ? <>     <a type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false" className='nav-link pc'href="#">
+                                {window.innerWidth > 990 ? <>     <a type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false" className='nav-link pc' href="#">
                                     Why AddRoll?&nbsp;
                                     {window.innerWidth > 990 && (
                                         activeDrop4 ? (
@@ -189,9 +195,9 @@ const Nav = () => {
                                         minWidth: '0px', width: '100%', position: 'fixed', left: '0',
                                         transformOrigin: 'top center', transform: activeDrop4 ? 'scaleY(1)' : 'scaleY(0)',
                                         transition: 'transform 0.3s ease-in', display: activeDrop4 ? 'block' : 'none'
-                                    }} className="m-0 my-2 py-2 p-0 dropdown-menu shadow " aria-labelledby="dropdownMenuButton">
+                                    }} className="m-0  py-2 p-0 dropdown-menu shadow " aria-labelledby="dropdownMenuButton">
 
-                                        <div className='row justify-content-center mx-3 my-5'>
+                                        <div className='row justify-content-center mx-3 mt-5'>
 
                                             <div className="col-lg-2">
                                                 <strong>Marketing Resources</strong>
@@ -232,10 +238,14 @@ const Nav = () => {
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div className='row p-0'>
+                                            <div className='col-lg-12 rbgNew'> </div>
                                         </div>
+                                        </div>
+                                    
                                     </ul>
-                                </> :<> 
-                                   <h6 className='shead'>Resources </h6>
+                                </> : <>
+                                    <h6 className='shead'>Resources </h6>
 
                                     <ul className='sbody'>
                                         <li ><a href="#">AddRoll Blog</a></li>
@@ -245,10 +255,10 @@ const Nav = () => {
                                         <li ><a href="#">Getting Started</a></li>
                                         <li ><a href="#">Help center</a></li>
                                     </ul>
-                                    
+
                                     <h6 className='shead'>Login</h6>
-                                        <button className='btn px-1 w-100 rounded-2 btn-purp'>GET STARTED</button>
-                                    </>
+                                    <button className='btn px-1 w-100 rounded-2 btn-purp'>GET STARTED</button>
+                                </>
                                 }
                             </li>
                         </ul>
