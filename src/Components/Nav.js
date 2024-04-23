@@ -6,12 +6,13 @@ const Nav = () => {
     const [activeDrop3, setActiveDrop3] = useState(false)
     const [activeDrop4, setActiveDrop4] = useState(false)
 
+                 //   <img src="https://www.adroll.com/assets/svg/logo-adroll.svg" width='80' alt="" />
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light" style={{ background: 'rgb(255,255,255)', zIndex: '2', padding: window.innerWidth < 990 ? '0 0' : '5px 12px', position:'sticky', top:'0' }} >
             <div className="container-fluid p-1"  >
                 <a className="navbar-brand" href="#">
-                    <img src="https://www.adroll.com/assets/svg/logo-adroll.svg" width='80' alt="" />
+    <h4>AdTech</h4>
                 </a>
                 <div className="navbar-toggler" style={{ border: 'none' }}>
                     <button className='mx-2 btn p-2 rounded-2 btn-purp'>GET STARTED</button>
